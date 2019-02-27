@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--<color name="colorPrimary">#3F51B5</color>-->
+    <color name="colorPrimary">#ff4f3d</color>
+    <color name="colorPrimaryDark">@color/white</color>
+    <color name="colorAccent">@color/colorPrimary</color>
+    <!-- 公共 -->
+    <color name="title_bar_bg">#F7F7F7</color>
+    <color name="white">#ffffff</color>
+    <color name="white_transparent">#00ffffff</color>
+    <color name="black">#000000</color>
+    <color name="sdd">#20000000</color>
+    <!-- title背景色-->
+    <!--文字颜色-->
+    <color name="text_black_121212">#121212</color>
+    <color name="text_hint">#cccccc</color>
+    <color name="text_gray">#858585</color>
+    <color name="text_gray_three">#575757</color>
+    <color name="text_gray_four">#CCCCCC</color>
+    <color name="line_gray">#E1E1E1</color>
+    <color name="person_info_bg">#F0F0F0</color>
+    <color name="mx_bg_color">#F3F3F3</color>
+    <!-- 字体颜浅灰 -->
+    <color name="text_lowgray">#cccccc</color>
+    <!--常用-->
+    <color name="background_blue">#007aff</color>
+    <color name="background_gray">#F5F5F5</color>
+    <color name="background_light_gray">#FAFAFA</color>
+    <color name="background_ablack">#55000000</color>
+    <!--底部tab文字颜色-->
+    <color name="tab_color_true">@color/colorAccent</color>
+    <color name="tab_color_false">#a7a8ac</color>
+    <color name="tab_color_normal">#444444</color>
+
+    <color name="text_black_333">#333333</color>
+    <color name="text_gray_five">#999999</color>
+    <color name="text_007AFF">#007AFF</color>
+    <color name="text_F04453">#F04453</color>
+    <color name="color_38adff">#38ADFF</color>
+    <color name="color_999999">#999999</color>
+    <color name="color_fcd63e">#FCD63E</color>
+    <color name="color_F7dc3e">#F04453</color>
+    <color name="color_ccad33">#ccad33</color>
+    <color name="bacground_gray">#F5F5F5</color>
+    <color name="color_recommend_bg">#E6E6E6</color>
+    <color name="hint_color">#B5B5B5</color>
+    <color name="text_hintgray">#f0f0f0</color>
+    <color name="text_gray_858585">#858585</color>
+    <color name="bg_red_normal">#FFA79E</color>
+    <color name="text_black_333333">#333333</color>
+    <color name="line_gray_e1e1e1">#e1e1e1</color>
+    <color name="text_blue_1469ff">#1469ff</color>
+    <color name="text_bacground_gray">#F4F6F9</color>
+    <color name="time_bacground_gray">#cecece</color>
+    <color name="SYSTEM_bacground_gray">#858585</color>
+    <color name="text_bg_gray">#eeeeee</color>
+    <color name="text_invite">#fdd094</color>
+    <color name="coin_type_orange">#FE9355</color>
+</resources>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:binding="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <EditText
+        android:id="@+id/register_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/app_name"
+        android:text="@={viewModel.name}" />
+
+
+    <EditText
+        android:id="@+id/register_pwd"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="pwd"
+        android:inputType="textPassword"
+        android:text="@={viewModel.password}"
+        binding:layout_constraintLeft_toRightOf="@id/register_name"
+        binding:layout_constraintTop_toBottomOf="@id/register_name" />
+
+</android.support.constraint.ConstraintLayout>

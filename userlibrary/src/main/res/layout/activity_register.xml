@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:binding="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+        <variable
+            name="viewModel"
+            type="com.kxf.userlibrary.register.RegisterViewModel" />
+    </data>
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <EditText
+            android:id="@+id/register_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/app_name"
+            android:text="@={viewModel.name}" />
+
+
+        <EditText
+            android:id="@+id/register_pwd"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="pwd"
+            android:inputType="textPassword"
+            android:text="@={viewModel.password}"
+            binding:layout_constraintTop_toBottomOf="@id/register_name" />
+
+        <EditText
+            android:id="@+id/register_sms"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="输入验证码"
+            android:inputType="textPassword"
+            android:text="@={viewModel.smsCode}"
+            binding:layout_constraintTop_toBottomOf="@id/register_pwd" />
+
+        <TextView
+            android:id="@+id/register_send"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="发送验证码"
+            binding:layout_constraintBaseline_toBaselineOf="@id/register_sms"
+            binding:layout_constraintLeft_toRightOf="@id/register_sms"
+            binding:layout_constraintRight_toRightOf="parent" />
+
+
+        <CheckBox
+            android:id="@+id/register_check"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="内容协议"
+            binding:layout_constraintRight_toRightOf="parent"
+            binding:layout_constraintTop_toBottomOf="@id/register_sms" />
+
+        <!--<TextView-->
+        <!--android:id="@+id/register_send"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:text="发送验证码"-->
+        <!--binding:layout_constraintLeft_toRightOf="@id/register_sms" />-->
+
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            binding:onClickCommand="@{viewModel.sendSms}"
+            android:text="click"
+            binding:layout_constraintLeft_toLeftOf="parent"
+            binding:layout_constraintRight_toRightOf="parent"
+            binding:layout_constraintTop_toBottomOf="@id/register_check" />
+
+
+    </android.support.constraint.ConstraintLayout>
+
+</layout>
